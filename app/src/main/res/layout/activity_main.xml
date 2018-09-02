@@ -7,12 +7,15 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.kyleg.myfitnessapp.MainActivity">
+    tools:context="com.example.kyleg.myfitnessapp.MainActivity"
+    android:backgroundTint="#e12929"
+    android:background="#e12929">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Home Screen"
+        android:text="My Fitness Application"
+        android:textColor="@android:color/white"
         android:id="@+id/textView2" />
 
     <Button
@@ -21,6 +24,7 @@
         android:layout_height="wrap_content"
         android:text="Current Routine"
         style="@style/Widget.AppCompat.Button.Colored"
+        android:backgroundTint="@android:color/black"
         android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true"
         android:layout_marginBottom="20dp" />
@@ -31,6 +35,7 @@
         android:layout_height="wrap_content"
         android:text="Edit Exercise"
         style="@style/Widget.AppCompat.Button.Colored"
+        android:backgroundTint="@android:color/black"
         android:layout_above="@+id/bt_addWorkout_Activity"
         android:layout_alignParentStart="true" />
 
@@ -40,6 +45,7 @@
         android:text="Edit Workout"
         android:id="@+id/bt_addWorkout_Activity"
         style="@style/Widget.AppCompat.Button.Colored"
+        android:backgroundTint="@android:color/black"
         android:layout_above="@+id/bt_editRoutine_Activity"
         android:layout_alignParentStart="true" />
 
@@ -49,6 +55,7 @@
         android:text="Edit Routine"
         android:id="@+id/bt_editRoutine_Activity"
         style="@style/Widget.AppCompat.Button.Colored"
+        android:backgroundTint="@android:color/black"
         android:layout_above="@+id/bt_launch_activity"
         android:layout_alignParentStart="true" />
 </RelativeLayout>
