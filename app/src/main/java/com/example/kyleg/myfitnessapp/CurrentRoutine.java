@@ -11,7 +11,7 @@ import android.widget.TextView;
 public class CurrentRoutine extends AppCompatActivity {
 
     private Button mainButtonBack;
-    public int counter;
+    public int counter = 0;
     Button start_timer;
     TextView timerView;
 
@@ -24,7 +24,7 @@ public class CurrentRoutine extends AppCompatActivity {
         timerView=(TextView) findViewById(R.id.exercise_timer); start_timer.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
-                new CountDownTimer(30000,1000){
+                new CountDownTimer(5000,1000){
                     @Override
                     public void onTick(long millisUntilFinished) {
                         timerView.setText(String.valueOf(counter));
