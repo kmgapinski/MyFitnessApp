@@ -10,21 +10,39 @@
     tools:context="com.example.kyleg.myfitnessapp.addExercise">
 
     <Button
+        android:id="@+id/bt_go_back"
+        style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Back"
-        android:id="@+id/bt_go_back"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="36dp"
-        style="@style/Widget.AppCompat.Button.Colored"/>
+        android:layout_marginBottom="12dp"
+        android:text="Back" />
 
-    <TextView
+    <Button
+        android:id="@+id/bt_modifyWeightlifiting_activity"
+        style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Add Exercise Screen"
-        android:id="@+id/textView"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true" />
+        android:layout_below="@+id/bt_modifyCardio_activity"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-151dp"
+        android:text="Modify Weight Lifting Exercise" />
+
+    <Button
+        android:id="@+id/bt_modifyCardio_activity"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="151dp"
+        android:text="Modify Cardio" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+/>
+
 </RelativeLayout>

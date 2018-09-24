@@ -1,15 +1,28 @@
 package com.example.kyleg.myfitnessapp;
 
-import android.provider.ContactsContract;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.content.Intent;
 import android.widget.Button;
-import android.view.View;
-import android.app.Activity;
+import android.view.LayoutInflater;
+import android.view.ViewGroup;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
+import android.widget.CheckBox;
+import android.widget.ListView;
+import android.widget.TextView;
+import android.widget.Toast;
+import android.widget.AdapterView.OnItemClickListener;
+
+import java.util.ArrayList;
+
+import android.content.Context;
+import android.util.Log;
 
 public class MainActivity extends AppCompatActivity {
+
+
 
     private Button currentRoutineLaunchActivity;
     private Button addExerciseLaunchActivity;
@@ -21,20 +34,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        //Activity for current Routine
-        currentRoutineLaunchActivity = (Button) findViewById(R.id.bt_launch_activity);
-
-
-        currentRoutineLaunchActivity.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                launchActivity();
-            }
-        });
-
         //Activity for Add Exercise
         addExerciseLaunchActivity = (Button) findViewById(R.id.bt_addExercise_activity);
-
         addExerciseLaunchActivity.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
@@ -62,7 +63,19 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+
+        //Activity for current Routine
+        currentRoutineLaunchActivity = (Button) findViewById(R.id.bt_launch_activity);
+
+        currentRoutineLaunchActivity.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                launchActivity();
+            }
+        });
+
     }
+
     private void launchActivity(){
         Intent intent = new Intent(this, CurrentRoutine.class);
         startActivity(intent);

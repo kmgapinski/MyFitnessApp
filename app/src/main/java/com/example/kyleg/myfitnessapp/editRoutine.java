@@ -12,7 +12,7 @@ public class editRoutine extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_current_routine);
+        setContentView(R.layout.activity_edit_routine);
 
         mainButtonBack = (Button)findViewById(R.id.bt_go_back);
         mainButtonBack.setOnClickListener(new View.OnClickListener(){

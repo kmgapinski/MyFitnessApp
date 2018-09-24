@@ -18,6 +18,8 @@
         <activity android:name=".CurrentRoutine" />
         <activity android:name=".addExercise" />
         <activity android:name=".addWorkout" />
+        <activity android:name=".modifyCardio" />
+        <activity android:name=".modifyWeightlifting" />
         <activity android:name=".editRoutine"></activity>
     </application>
 
