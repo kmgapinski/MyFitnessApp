@@ -9,12 +9,13 @@ import android.content.Intent;
 public class addWorkout extends AppCompatActivity {
 
     private Button mainButtonBack;
-    private Button modifyWorkout;
+    private Button editWorkout;
+    private Button addNewWorkout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_add_workout);
+        setContentView(R.layout.activity_workout_selector);
 
         mainButtonBack = (Button) findViewById(R.id.bt_go_back);
         mainButtonBack.setOnClickListener(new View.OnClickListener() {
@@ -24,17 +25,30 @@ public class addWorkout extends AppCompatActivity {
             }
         });
 
-        modifyWorkout = (Button) findViewById(R.id.bt_modifyWorkout_activity);
-        modifyWorkout.setOnClickListener(new View.OnClickListener(){
+        editWorkout = (Button) findViewById(R.id.bt_edit_workout);
+        editWorkout.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
                 launchmodifyWorkout();
+            }
+        });
+
+        addNewWorkout = (Button) findViewById(R.id.bt_new_workout);
+        addNewWorkout.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                launchaddNewWorkout();
             }
         });
     }
 
     private void launchmodifyWorkout(){
         Intent intent = new Intent (this, modifyWorkout.class);
+        startActivity(intent);
+    }
+
+    private void launchaddNewWorkout(){
+        Intent intent = new Intent (this, addWorkout.class);
         startActivity(intent);
     }
 }

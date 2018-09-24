@@ -27,14 +27,14 @@
         android:layout_alignParentTop="true"
         android:text="Workout Selector"
         android:textAppearance="?android:attr/textAppearanceLarge" />
-
+<!--
     <android.support.v7.widget.RecyclerView
         android:id="@+id/workout_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignStart="@+id/textView"
         android:layout_below="@+id/textView" />
-
+-->
     <Button
         android:id="@+id/bt_edit_workout"
         android:layout_width="150dp"

@@ -92,7 +92,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void launchRoutineActivity(){
-        Intent intent = new Intent(this, editRoutine.class);
+        Intent intent = new Intent(this, routineSelector.class);
         startActivity(intent);
     }
 }

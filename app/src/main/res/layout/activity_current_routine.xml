@@ -10,12 +10,42 @@
     tools:context="com.example.kyleg.myfitnessapp.CurrentRoutine">
 
     <TextView
-        android:id="@+id/tv_message"
+        android:id="@+id/nw_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="137dp"
+        android:text="Next Workout"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/tv_message3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:text="Current Routine"
-        android:textAppearance="?android:attr/textAppearanceLarge"/>
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/next_workout_name_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="224dp"
+        android:text="[none]"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/current_routine_name_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="59dp"
+        android:text="[none]"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <Button
         android:id="@+id/bt_go_back"
@@ -27,23 +57,20 @@
         android:layout_centerHorizontal="true" />
 
     <Button
+        android:id="@+id/bt_confirm_workout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Begin Exercise"
-        android:id="@+id/bt_start_Exercise"
-        android:layout_marginTop="106dp"
-        android:layout_below="@+id/tv_message"
-        android:layout_alignEnd="@+id/tv_message" />
+        android:layout_alignTop="@+id/bt_skip_workout"
+        android:layout_toEndOf="@+id/bt_go_back"
+        android:text="OK" />
 
-    <TextView
+    <Button
+        android:id="@+id/bt_skip_workout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/exercise_timer"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:textSize="40sp"
-        android:layout_below="@+id/tv_message"
-        android:layout_alignStart="@+id/bt_go_back"
-        android:layout_marginTop="40dp" />
-
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="111dp"
+        android:layout_toStartOf="@+id/bt_go_back"
+        android:text="Skip" />
 
 </RelativeLayout>

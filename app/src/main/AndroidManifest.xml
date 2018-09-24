@@ -20,6 +20,8 @@
         <activity android:name=".addWorkout" />
         <activity android:name=".modifyCardio" />
         <activity android:name=".modifyWeightlifting" />
+        <activity android:name=".modifyWorkout" />
+        <activity android:name=".routineSelector" />
         <activity android:name=".editRoutine"></activity>
     </application>
 

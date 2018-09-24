@@ -43,14 +43,14 @@
         android:layout_toEndOf="@+id/bt_new_routine"
         android:text="(name)"
         android:textAppearance="?android:attr/textAppearanceLarge" />
-
+<!--
     <android.support.v7.widget.RecyclerView
         android:id="@+id/routine_selection"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/textView"
         android:layout_centerHorizontal="true" />
-
+-->
     <Button
         android:id="@+id/bt_edit_routine"
         android:layout_width="150dp"

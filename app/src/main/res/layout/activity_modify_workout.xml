@@ -54,7 +54,7 @@
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Leg Day" />
-
+<!--
     <android.support.v7.widget.RecyclerView
         android:id="@+id/exercise_view"
         android:layout_width="135dp"
@@ -69,6 +69,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/textView4"
         android:layout_toEndOf="@+id/bt_go_back" />
+        -->
     <TextView
         android:id="@+id/textView4"
         android:layout_width="134dp"
