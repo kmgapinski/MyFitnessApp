@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -20,24 +21,24 @@
 
     <Button
         android:id="@+id/bt_launch_activity"
+        style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Current Routine"
-        style="@style/Widget.AppCompat.Button.Colored"
-        android:backgroundTint="@android:color/black"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginBottom="20dp" />
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="34dp"
+        android:backgroundTint="@android:color/black"
+        android:text="Current Routine" />
 
     <Button
         android:id="@+id/bt_addExercise_activity"
+        style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Edit Exercise"
-        style="@style/Widget.AppCompat.Button.Colored"
-        android:backgroundTint="@android:color/black"
         android:layout_above="@+id/bt_addWorkout_Activity"
-        android:layout_alignParentStart="true" />
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@android:color/black"
+        android:text="Edit Exercise" />
 
     <Button
         android:id="@+id/bt_addWorkout_Activity"
@@ -45,7 +46,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_above="@+id/bt_editRoutine_Activity"
-        android:layout_alignParentStart="true"
+        android:layout_centerHorizontal="true"
         android:backgroundTint="@android:color/black"
         android:text="Workout Selector" />
 
@@ -55,7 +56,17 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_above="@+id/bt_launch_activity"
-        android:layout_alignParentStart="true"
+        android:layout_centerHorizontal="true"
         android:backgroundTint="@android:color/black"
         android:text="Routine Selector (To Be Worked!)" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="260dp"
+        android:layout_height="205dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="56dp"
+        app:srcCompat="@drawable/workout" />
 </RelativeLayout>

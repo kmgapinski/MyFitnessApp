@@ -20,8 +20,8 @@ public class CurrentRoutine extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_current_routine);
 
-        start_timer = (Button)findViewById(R.id.bt_start_Exercise);
-        timerView=(TextView) findViewById(R.id.exercise_timer); start_timer.setOnClickListener(new View.OnClickListener(){
+        start_timer = (Button)findViewById(R.id.bt_do_exercise);
+        timerView=(TextView) findViewById(R.id.bt_do_exercise); start_timer.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
                 new CountDownTimer(5000,1000){
