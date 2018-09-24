@@ -149,7 +149,8 @@
         android:layout_above="@+id/intensity_field"
         android:layout_alignStart="@+id/name_field"
         android:ems="10"
-        android:inputType="time" />
+        android:inputType="time"
+        android:text="5" />
 
     <!--Add default 3 minutes text on this time part-->
 

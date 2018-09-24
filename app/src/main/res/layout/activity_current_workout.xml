@@ -101,7 +101,7 @@
         android:layout_toStartOf="@+id/bt_go_back"
         android:text="Do Exercise" />
 
-    <android.support.v7.widget.RecyclerView
+    <listView
         android:id="@+id/unfinished_exercise_view"
         android:layout_width="125dp"
         android:layout_height="112dp"
@@ -110,7 +110,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="169dp" />
 
-    <android.support.v7.widget.RecyclerView
+    <listView
         android:id="@+id/finished_exercise_view"
         android:layout_width="125dp"
         android:layout_height="112dp"

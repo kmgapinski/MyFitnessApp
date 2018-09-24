@@ -5,20 +5,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.content.Intent;
 import android.widget.Button;
-import android.view.LayoutInflater;
-import android.view.ViewGroup;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
-import android.widget.CheckBox;
-import android.widget.ListView;
-import android.widget.TextView;
-import android.widget.Toast;
-import android.widget.AdapterView.OnItemClickListener;
-
-import java.util.ArrayList;
-
-import android.content.Context;
-import android.util.Log;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -28,11 +14,14 @@ public class MainActivity extends AppCompatActivity {
     private Button addExerciseLaunchActivity;
     private Button addWorkoutLaunchActivity;
     private Button addRoutineLaunchActivity;
+    DBHelper mydb;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        //mydb = new DBHelper(this);
 
         //Activity for Add Exercise
         addExerciseLaunchActivity = (Button) findViewById(R.id.bt_addExercise_activity);
