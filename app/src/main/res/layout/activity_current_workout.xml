@@ -22,8 +22,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
-        android:layout_alignTop="@+id/current_workout_name_text4"
-        android:layout_marginEnd="17dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="115dp"
         android:text="Finished Exercises"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
@@ -41,8 +42,8 @@
         android:id="@+id/current_workout_name_text6"
         android:layout_width="51dp"
         android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/finished_exercise_text"
         android:layout_alignTop="@+id/current_workout_name_text3"
-        android:layout_toEndOf="@+id/tv_message3"
         android:text="Min."
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
@@ -50,9 +51,10 @@
         android:id="@+id/current_workout_name_text4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/unfinished_exercise_view"
+        android:layout_above="@+id/finished_exercise_text"
         android:layout_alignParentStart="true"
-        android:layout_marginBottom="-147dp"
+        android:layout_marginBottom="-140dp"
+        android:layout_marginStart="12dp"
         android:text="Unfinished Exercises"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
@@ -69,8 +71,8 @@
         android:id="@+id/estimated_time_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/tv_message3"
         android:layout_alignTop="@+id/current_workout_name_text3"
-        android:layout_toEndOf="@+id/bt_go_back"
         android:text="0"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
@@ -87,9 +89,8 @@
         android:id="@+id/bt_exercises_done"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
+        android:layout_above="@+id/bt_go_back"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="75dp"
         android:text="Exercises Done" />
 
     <Button
@@ -97,24 +98,23 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="141dp"
-        android:layout_toStartOf="@+id/bt_go_back"
+        android:layout_marginBottom="104dp"
+        android:layout_toStartOf="@+id/current_workout_name_text"
         android:text="Do Exercise" />
 
+    <ListView
+        android:id="@+id/finished_exercise_view"
+        android:layout_width="150dp"
+        android:layout_height="165dp"
+        android:layout_above="@+id/bt_do_exercise"
+        android:layout_alignStart="@+id/current_workout_name_text3" />
+<!--
     <listView
         android:id="@+id/unfinished_exercise_view"
         android:layout_width="125dp"
         android:layout_height="112dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="169dp" />
-
-    <listView
-        android:id="@+id/finished_exercise_view"
-        android:layout_width="125dp"
-        android:layout_height="112dp"
-        android:layout_alignTop="@+id/unfinished_exercise_view"
-        android:layout_toEndOf="@+id/current_workout_name_text" />
-
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/finished_exercise_view"
+        android:layout_marginEnd="43dp" />
+    -->
 </RelativeLayout>
