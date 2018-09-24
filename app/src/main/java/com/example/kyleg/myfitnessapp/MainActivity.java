@@ -14,6 +14,7 @@ public class MainActivity extends AppCompatActivity {
     private Button addExerciseLaunchActivity;
     private Button addWorkoutLaunchActivity;
     private Button addRoutineLaunchActivity;
+    private Button exitApp;
     DBHelper mydb;
 
     @Override
@@ -63,8 +64,18 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-    }
+        exitApp = (Button) findViewById(R.id.bt_go_back);
+        exitApp.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                launchExitActivity();
+            }
+        });
 
+    }
+    private void launchExitActivity(){
+        finish();
+    }
     private void launchActivity(){
         Intent intent = new Intent(this, CurrentRoutine.class);
         startActivity(intent);
