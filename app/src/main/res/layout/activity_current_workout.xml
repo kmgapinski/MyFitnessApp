@@ -53,7 +53,7 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="138dp"
-        android:text="Intensity"
+        android:text="% Intensity or Weight"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <TextView
@@ -61,7 +61,7 @@
         android:layout_width="51dp"
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/estimated_time_text"
-        android:layout_alignEnd="@+id/bt_do_exercise"
+        android:layout_toStartOf="@+id/Repetitions"
         android:text="Min."
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
@@ -124,7 +124,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="188dp"
+        android:layout_marginTop="186dp"
         android:text="[none]" />
 
     <TextView

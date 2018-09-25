@@ -27,6 +27,7 @@ import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+// Activity class for routine selection
 
 
 public class Routine extends AppCompatActivity implements android.view.View.OnClickListener {
@@ -36,10 +37,6 @@ public class Routine extends AppCompatActivity implements android.view.View.OnCl
 
     private int _Exercise_ID = 0;
     int exercise_pointer = 3;
-
-    private int _Exercise_ID_next = 0;
-    int exercise_pointer_next = 3;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

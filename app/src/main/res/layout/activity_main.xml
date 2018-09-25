@@ -12,13 +12,6 @@
     android:backgroundTint="#494444"
     android:background="#726d6d">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="My Fitness Application"
-        android:textColor="@android:color/white"
-        android:id="@+id/textView2" />
-
     <Button
         android:id="@+id/bt_launch_activity"
         style="@style/Widget.AppCompat.Button.Colored"

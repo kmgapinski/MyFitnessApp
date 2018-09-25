@@ -1,5 +1,10 @@
 package com.example.kyleg.myfitnessapp;
 
+// Author Kyle Gapinski, Aaron Fairbanks, Henry Daise
+// For CSE 682
+// developed for educational purposes
+
+
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;

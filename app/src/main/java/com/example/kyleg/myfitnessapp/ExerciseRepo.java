@@ -1,4 +1,7 @@
 package com.example.kyleg.myfitnessapp;
+// Author Kyle Gapinski, Aaron Fairbanks, Henry Daise
+// For CSE 682
+// developed for educational purposes
 
 import android.content.ContentValues;
 import android.content.Context;
@@ -7,6 +10,7 @@ import android.database.sqlite.SQLiteDatabase;
 import java.util.ArrayList;
 import java.util.HashMap;
 
+//class used to implement SQL database calls
 public class ExerciseRepo {
     public DBHelper dbHelper;
 

@@ -73,6 +73,6 @@
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="111dp"
         android:layout_toStartOf="@+id/bt_go_back"
-        android:text="Skip" />
+        android:text="Next" />
 
 </RelativeLayout>

@@ -1,4 +1,7 @@
 package com.example.kyleg.myfitnessapp;
+// Author Kyle Gapinski, Aaron Fairbanks, Henry Daise
+// For CSE 682
+// developed for educational purposes
 
 import android.support.v7.app.AppCompatActivity;
 import android.database.sqlite.SQLiteDatabase;
@@ -100,18 +103,12 @@ public class CurrentRoutine extends AppCompatActivity implements android.view.Vi
         RepText.setText(String.valueOf(exercise.reps));
         intensityText.setText(String.valueOf(exercise.intensity));
 
-
-
         if (view == findViewById(R.id.bt_do_exercise)) {
             startActivity(intent);
         } else if (view == findViewById(R.id.bt_go_back)) {
             finish();
         } else if (view == findViewById(R.id.bt_exercises_done)) {
             finish();
-        }
-
-        else {
-
         }
 
     }

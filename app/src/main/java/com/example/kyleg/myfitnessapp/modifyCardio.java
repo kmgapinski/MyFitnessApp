@@ -1,4 +1,7 @@
 package com.example.kyleg.myfitnessapp;
+// Author Kyle Gapinski, Aaron Fairbanks, Henry Daise
+// For CSE 682
+// developed for educational purposes
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -30,6 +33,7 @@ public class modifyCardio extends AppCompatActivity implements android.view.View
         addExercise = (Button)findViewById(R.id.bt_add_exercise);
         addExercise.setOnClickListener(this);
 
+        // TODO: add delete function
         //deleteExercise = (Button)findViewById(R.id.bt_delete_exercise);
         //deleteExercise.setOnClickListener(this);
 
