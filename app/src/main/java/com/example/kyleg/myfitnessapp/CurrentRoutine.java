@@ -32,10 +32,12 @@ import java.util.HashMap;
 public class CurrentRoutine extends AppCompatActivity implements android.view.View.OnClickListener {
 
     private Button mainButtonBack, doExercise, exerciseDon;
-    TextView exercise_Id, currentWorkoutnameText, estimatedTimeText;
+    TextView currentWorkoutnameText, estimatedTimeText, intensityText,
+    setsText, RepText;
 
     private int _Exercise_ID = 0;
     int exercise_pointer = 3;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,6 +46,9 @@ public class CurrentRoutine extends AppCompatActivity implements android.view.Vi
 
 
         Intent intent = getIntent();
+
+        exercise_pointer = intent.getIntExtra("Current_Routine", 0);
+
         _Exercise_ID = intent.getIntExtra("exercise_ID", exercise_pointer);
         ExerciseRepo repo = new ExerciseRepo(this);
         Exercise exercise = new Exercise();
@@ -61,9 +66,17 @@ public class CurrentRoutine extends AppCompatActivity implements android.view.Vi
 
         currentWorkoutnameText = (TextView) findViewById(R.id.current_workout_name_text);
         estimatedTimeText = (TextView) findViewById(R.id.estimated_time_text);
+        setsText = (TextView) findViewById(R.id.Sets_text);
+        RepText = (TextView) findViewById(R.id.Repetitions_text);
+        intensityText = (TextView) findViewById(R.id.Repetitions_text);
 
         currentWorkoutnameText.setText(String.valueOf(exercise.name));
-        //estimatedTimeText.setText(exercise.time);
+        estimatedTimeText.setText(String.valueOf(exercise.time));
+        setsText.setText(String.valueOf(exercise.sets));
+        RepText.setText(String.valueOf(exercise.reps));
+        intensityText.setText(String.valueOf(exercise.intensity));
+
+
     }
 
 
@@ -77,14 +90,20 @@ public class CurrentRoutine extends AppCompatActivity implements android.view.Vi
 
         currentWorkoutnameText = (TextView) findViewById(R.id.current_workout_name_text);
         estimatedTimeText = (TextView) findViewById(R.id.estimated_time_text);
+        setsText = (TextView) findViewById(R.id.Sets_text);
+        RepText = (TextView) findViewById(R.id.Repetitions_text);
+        intensityText = (TextView) findViewById(R.id.Repetitions_text);
 
         currentWorkoutnameText.setText(String.valueOf(exercise.name));
         estimatedTimeText.setText(String.valueOf(exercise.time));
+        setsText.setText(String.valueOf(exercise.sets));
+        RepText.setText(String.valueOf(exercise.reps));
+        intensityText.setText(String.valueOf(exercise.intensity));
 
 
 
         if (view == findViewById(R.id.bt_do_exercise)) {
-            exercise_pointer++;
+            startActivity(intent);
         } else if (view == findViewById(R.id.bt_go_back)) {
             finish();
         } else if (view == findViewById(R.id.bt_exercises_done)) {

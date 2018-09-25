@@ -7,6 +7,8 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:backgroundTint="#494444"
+    android:background="#726d6d">
     tools:context="com.example.kyleg.myfitnessapp.CurrentRoutine">
 
     <TextView
@@ -18,44 +20,49 @@
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <TextView
-        android:id="@+id/finished_exercise_text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginEnd="20dp"
-        android:layout_marginTop="115dp"
-        android:text="Finished Exercises"
-        android:textAppearance="?android:attr/textAppearanceMedium" />
-
-    <TextView
         android:id="@+id/current_workout_name_text3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_alignStart="@+id/current_workout_name_text4"
-        android:layout_marginTop="80dp"
+        android:layout_below="@+id/current_workout_name_text"
+        android:layout_centerHorizontal="true"
         android:text="Estimated Time Remaining:"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/Intensity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/intensity_text"
+        android:layout_toStartOf="@+id/tv_message3"
+        android:text="Sets"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/Repetitions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/Intensity"
+        android:layout_toEndOf="@+id/bt_exercises_done"
+        android:text="Repetitions"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/intensity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="138dp"
+        android:text="Intensity"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <TextView
         android:id="@+id/current_workout_name_text6"
         android:layout_width="51dp"
         android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/finished_exercise_text"
-        android:layout_alignTop="@+id/current_workout_name_text3"
+        android:layout_alignBottom="@+id/estimated_time_text"
+        android:layout_alignEnd="@+id/bt_do_exercise"
         android:text="Min."
-        android:textAppearance="?android:attr/textAppearanceMedium" />
-
-    <TextView
-        android:id="@+id/current_workout_name_text4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/finished_exercise_text"
-        android:layout_alignParentStart="true"
-        android:layout_marginBottom="-140dp"
-        android:layout_marginStart="12dp"
-        android:text="Unfinished Exercises"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <TextView
@@ -71,8 +78,8 @@
         android:id="@+id/estimated_time_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/tv_message3"
-        android:layout_alignTop="@+id/current_workout_name_text3"
+        android:layout_alignStart="@+id/current_workout_name_text"
+        android:layout_below="@+id/current_workout_name_text3"
         android:text="0"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
@@ -98,17 +105,37 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="104dp"
-        android:layout_toStartOf="@+id/current_workout_name_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="122dp"
         android:text="Do Exercise" />
 
-    <ListView
-        android:id="@+id/finished_exercise_view"
-        android:layout_width="150dp"
-        android:layout_height="165dp"
-        android:layout_above="@+id/bt_do_exercise"
-        android:layout_alignStart="@+id/current_workout_name_text3" />
-<!--
+    <TextView
+        android:id="@+id/Sets_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="211dp"
+        android:layout_toStartOf="@+id/bt_exercises_done"
+        android:text="[none]" />
+
+    <TextView
+        android:id="@+id/intensity_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="188dp"
+        android:text="[none]" />
+
+    <TextView
+        android:id="@+id/Repetitions_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/Sets_text"
+        android:layout_toEndOf="@+id/tv_message3"
+        android:text="[none]" />
+
+    <!--
     <listView
         android:id="@+id/unfinished_exercise_view"
         android:layout_width="125dp"
